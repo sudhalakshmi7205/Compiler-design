@@ -1,0 +1,33 @@
+// ─── test.mini ─────────────────────────────────────────
+// Sample program for the MiniCompiler.
+// Demonstrates:  variables, arithmetic, if-else, while, print.
+// ─────────────────────────────────────────────────────────
+
+// --- Variable declarations (first assignment = declaration) ---
+x = 10;
+y = 20;
+z = x + y * 2;
+
+// --- Print a computed value ---
+print(z);
+
+// --- If-else statement ---
+if (z > 50) {
+    result = z - 50;
+} else {
+    result = z + 50;
+}
+print(result);
+
+// --- While loop: compute sum 1+2+...+5 ---
+sum = 0;
+i = 1;
+while (i <= 5) {
+    sum = sum + i;
+    i = i + 1;
+}
+print(sum);
+
+// --- Nested arithmetic with parentheses ---
+answer = (x + y) * (z - 10) / 2;
+print(answer);
